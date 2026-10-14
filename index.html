@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f1872c">
+  <meta name="description" content="Crust Pizza Co. — made-from-scratch pizzas, Chicago-style thin crust, and good times around the table. A recreation of the supplied design.">
+  <title>Crust Pizza Co. | Made from scratch</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='31' fill='%231d1d1b'/%3E%3Ctext x='32' y='40' text-anchor='middle' font-family='Arial' font-size='25' font-weight='bold' fill='%23f1872c'%3EC%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>*,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#e3e3df;color:#20211e;font-family:Roboto,Arial,sans-serif}.page{width:85.15625%;max-width:1100px;margin:auto;background:#f6f5ef;container-type:inline-size;box-shadow:0 0 45px #0002}button,a{-webkit-tap-highlight-color:transparent}button{font:inherit}a{color:inherit;text-decoration:none}button{cursor:pointer}button:focus-visible,a:focus-visible{outline:3px solid #994600;outline-offset:4px}.sr-only{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.skip-link{position:fixed;left:16px;top:-80px;z-index:10;padding:12px;background:white}.skip-link:focus{top:16px}dialog{width:min(540px,calc(100% - 32px));max-height:85vh;overflow:auto;border:0;border-radius:20px;padding:32px;color:#20211e;background:#f6f5ef;box-shadow:0 24px 100px #0005}dialog::backdrop{background:#15120ecc;backdrop-filter:blur(5px)}dialog h2{font:800 32px/1 'Barlow Condensed',sans-serif;text-transform:uppercase;margin:0 35px 20px 0}dialog p{font-size:15px;line-height:1.6}dialog .close{position:absolute;right:14px;top:12px;border:0;background:transparent;font-size:30px}dialog .dialog-item{padding:16px 0;border-bottom:1px solid #ddd}dialog .dialog-item h3{font:700 24px 'Barlow Condensed',sans-serif;margin:0}dialog .dialog-item p{margin:5px 0}dialog .note{font-size:13px;color:#686052}body.modal-open{overflow:hidden}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}</style>
+  <link rel="stylesheet" href="desktop.css">
+  <link rel="stylesheet" href="mobile.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="page" id="home">
+  <header class="header">
+    <nav class="nav nav-left" aria-label="Main navigation">
+      <a class="active" href="#home">Home</a><a href="#menu">Menu</a><a href="#locations">Locations</a><button data-panel="order">Order online</button>
+    </nav>
+    <a href="#home" class="sprite logo" aria-label="Crust Pizza Co. home"></a>
+    <nav class="nav nav-right" aria-label="Company navigation">
+      <a href="#about">About</a><a href="#contact">Contact</a><button class="social facebook" data-panel="social" aria-label="Facebook">f</button><button class="social twitter" data-panel="social" aria-label="Twitter"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 5.9a8 8 0 0 1-2.4.7 4.2 4.2 0 0 0 1.8-2.3 8.2 8.2 0 0 1-2.6 1 4.1 4.1 0 0 0-7 3.7 11.6 11.6 0 0 1-8.4-4.3A4.1 4.1 0 0 0 4.7 10a4 4 0 0 1-1.9-.5 4.1 4.1 0 0 0 3.3 4 4 4 0 0 1-1.9.1A4.1 4.1 0 0 0 8 16.5a8.3 8.3 0 0 1-6 1.7A11.6 11.6 0 0 0 19.8 8.4 8 8 0 0 0 22 5.9Z"/></svg></button><button data-panel="contact">Call now</button>
+    </nav>
+    <button class="mobile-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation">☰</button>
+  </header>
+  <nav id="mobile-nav" class="mobile-nav" hidden aria-label="Mobile navigation"><a href="#menu">Our menu</a><a href="#about">About us</a><a href="#locations">Locations</a><a href="#contact">Contact</a><button data-panel="order">Order online</button></nav>
+  <main id="main">
+    <section class="hero sprite" aria-labelledby="hero-title">
+      <h1 id="hero-title" class="sr-only">For delicious, made-from-scratch pizzas</h1>
+      <p class="sr-only">Made fresh. Shared with the people you love.</p>
+      <button class="button hero-button" data-panel="order">Order Online</button>
+    </section>
+    <section class="menu-section" id="menu" aria-labelledby="menu-title">
+      <h2 id="menu-title">Our menu</h2>
+      <div class="menu-grid">
+        <button class="menu-card" data-dish="chicken-parm"><span class="sprite dish dish-1" role="img" aria-label="Fresh baked chicken parmesan pizza"></span><span class="dish-copy"><strong>Chicken Parm</strong><span>Chicken, rich tomato sauce<br>and golden melted cheese.</span><span class="dish-arrow" aria-hidden="true">»</span></span></button>
+        <button class="menu-card" data-dish="chicken-alfredo"><span class="sprite dish dish-2" role="img" aria-label="Creamy chicken alfredo pizza"></span><span class="dish-copy"><strong>Chicken Alfredo</strong><span>Creamy alfredo, tender chicken<br>and our signature cheese blend.</span><span class="dish-arrow" aria-hidden="true">»</span></span></button>
+        <button class="menu-card" data-dish="spaghetti"><span class="sprite dish dish-3" role="img" aria-label="A freshly baked pizza from our menu"></span><span class="dish-copy"><strong>Spaghetti &amp; Meatballs</strong><span>A little comfort, a lot of flavor.<br>A classic made for sharing.</span><span class="dish-arrow" aria-hidden="true">»</span></span></button>
+        <button class="menu-card" data-dish="mac-cheese"><span class="sprite dish dish-4" role="img" aria-label="Baked pasta with cheese and fresh herbs"></span><span class="dish-copy"><strong>Baked Mac &amp; Cheese</strong><span>Perfectly baked, wonderfully<br>cheesy comfort in every bite.</span><span class="dish-arrow" aria-hidden="true">»</span></span></button>
+      </div>
+      <button class="button complete-menu" data-panel="menu">View our complete menu</button>
+    </section>
+    <section class="about-section" id="about" aria-labelledby="about-title">
+      <div class="about-copy"><h2 id="about-title">Home of the<br>Chicago-style<br>thin crust pizza</h2><p>Every day starts fresh. From our made-from-scratch dough to the final slice, we bring good food and good people together.</p><div class="about-actions"><button class="button" data-panel="about">Learn more</button><a href="#locations">See locations</a></div></div>
+      <div class="sprite values" role="img" aria-label="Made from scratch, baked fresh, locally loved, family friendly, comfortable spaces, and quality ingredients"></div>
+      <div class="sprite team-photo" role="img" aria-label="Two smiling members of the Crust Pizza family in taped Polaroid photographs"></div>
+    </section>
+    <section class="enjoy-section" aria-labelledby="enjoy-title">
+      <h2 id="enjoy-title">Ways to enjoy</h2>
+      <div class="enjoy-grid">
+        <div class="enjoy-left">
+          <div class="sprite pizza-photo" role="img" aria-label="A whole pepperoni pizza on a wooden board with the Crust Pizza Co. stamp"></div>
+          <div class="community" id="community"><div><button class="handle" data-panel="social">@yourbrandhandle</button><h3>Let's work together<br>for our community</h3><p>Good food brings people together.<br>Let's make a difference in our community.</p></div><div class="sprite community-art" role="img" aria-label="Illustration of volunteers sharing a pizza box"></div></div>
+        </div>
+        <div class="enjoy-right">
+          <div class="offers">
+            <article class="offer"><span class="sprite offer-icon icon-1" aria-hidden="true"></span><h3>Award-winning<br>pizza &amp; service</h3><p>A passion for pizza, a warm welcome,<br>and a place for everyone.</p><button class="button" data-panel="service">Learn more</button></article>
+            <article class="offer"><span class="sprite offer-icon icon-2" aria-hidden="true"></span><h3>Kids eat free<br>Tuesdays!</h3><p>Your next family pizza night<br>starts around our table.</p><button class="button" data-panel="kids">View our complete menu</button></article>
+          </div>
+          <section class="why"><h3>Why choose us</h3><div class="sprite gallery" role="img" aria-label="Six photographs of fresh pizzas, friends, and pizza being prepared and shared"></div></section>
+        </div>
+      </div>
+    </section>
+    <section class="contact-section" id="contact" aria-label="Franchising and contact">
+      <div class="franchise"><h2>Want to own your own<br>Crust Pizza Co.?</h2><p>Bring a little more Crust to your community.</p><button class="button" data-panel="franchise">Submit a request</button></div>
+      <button class="sprite restaurant" id="locations" data-panel="locations" aria-label="See Crust Pizza restaurant location information"></button>
+      <div class="request"><h2>Submit a request</h2><div class="request-links"><button data-panel="locations">Locations</button><button data-panel="contact">Get<br>in touch</button><button data-panel="social">Follow us</button></div></div>
+    </section>
+  </main>
+  <footer><a href="#home" class="sprite footer-logo" aria-label="Back to top"></a><button class="footer-order" data-panel="order">Want to place an<br>order now?</button><nav aria-label="Footer navigation"><a href="#menu">Menu</a><button data-panel="catering">Catering</button><button data-panel="careers">Careers</button><button data-panel="community">Community</button><button data-panel="privacy">Privacy</button><button data-panel="terms">Terms</button></nav></footer>
+</div>
+<dialog id="details" aria-labelledby="dialog-title"><button class="close" aria-label="Close dialog">×</button><h2 id="dialog-title"></h2><div id="dialog-content"></div></dialog>
+</body>
+</html>
